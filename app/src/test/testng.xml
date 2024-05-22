@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" parallel="tests" thread-count="4" verbose="4">
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ssu.task.tests.AddToFavoritesTests"/>
+            <class name="ssu.task.tests.CartPriceConsistencyTests"/>
+            <class name="ssu.task.tests.SearchResultByGenreTests"/>
+            <class name="ssu.task.tests.SearchResultTest"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ssu.task.tests.AddToFavoritesTests"/>
+            <class name="ssu.task.tests.CartPriceConsistencyTests"/>
+            <class name="ssu.task.tests.SearchResultByGenreTests"/>
+            <class name="ssu.task.tests.SearchResultTest"/>
+        </classes>
+    </test>
+</suite>

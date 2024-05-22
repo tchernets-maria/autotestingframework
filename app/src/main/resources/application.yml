@@ -1,0 +1,4 @@
+site.url: https://artnow.ru/
+wait-timeout: PT20S
+firefox-version: 123.0
+chrome-version: 122.0.6261.69
